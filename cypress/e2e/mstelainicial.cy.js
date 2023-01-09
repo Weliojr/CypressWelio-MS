@@ -14,37 +14,37 @@ describe('teste entrando no site', () => {/// automação inicial de entrada no 
     .click();/// para confirmar pais
     cy.get('[formcontrolname="name"]')/// encontra o input name
     .click()///clica no input name
-    .type('Francisco Welio');///escreve o nome
+    .type('Fulano cliclano');///escreve o nome
     cy.get('[formcontrolname="birthDate"]')///encontra o input data de nascimento
     .click()///clica no input data de nascimento
-    .type('11031998');///escreve a data toda junta pois o site já padroniza
+    .type('00000000');///escreve a data toda junta pois o site já padroniza
     cy.get('[formcontrolname="gender"]') ///encontra a lista de genêros
     .click();/// clica para abrir a lista
     cy.get('[class="cdk-overlay-pane"]')///encontra o pop up
     ///.contains('Masculino')///encontra o masculino
-    .contains('Feminino')///encontra o feminino
+    ///.contains('Feminino')///encontra o feminino
     .click();///clica pra confirmar
     cy.get('[formcontrolname="cpf"]')/// encontra o input do cpf
     .click()///clica 
-    .type('07093669492');///digita o valor do cpf
+    .type('00000000000');///digita o valor do cpf
     cy.get('[formcontrolname=phoneDDI').click()///encontra o input de DDI
     .clear()///limpa pois inicialmente é direcionado ao DDI brasileiro
-    .type('+333')///digitar o DDI
+    .type('+000')///digitar o DDI
     cy.get('[formcontrolname="phone"]')///encontra o input do telefone
     .click()///clica
-    .type('83999193272');/// digita o numero com DDD tudo junto, pois o site padroniza posteriomente
+    .type('00000000000');/// digita o numero com DDD tudo junto, pois o site padroniza posteriomente
     cy.get('[id="mat-input-7"]')///encontra o input do cadastro do email
     .click()///clica 
     .type('email@email.com.br');/// digita o email
     cy.get('[formcontrolname="username"]')///encontra o input de username
     .click()///clica
-    .type('weliojr');/// digita username
+    .type('Fulaninho');/// digita username
     cy.get('[formcontrolname="password"]')///encontra o password
     .click()/// clica
-    .type('jurubebinha1');/// digita a senha com o mínimo 6 caracteres contendo no mínimo 1 letra e 1 número
+    .type('fulano1');/// digita a senha com o mínimo 6 caracteres contendo no mínimo 1 letra e 1 número
     cy.get('[formcontrolname="confirmPassword"]')///encontra o input para confirmar senha
     .click()///clica
-    .type('jurubebinha1');/// digita a senha anterior
+    .type('fulano1');/// digita a senha anterior
     cy.get('[formcontrolname="currency"]')/// encontra o lista de moeda corrente 
     .click();/// para abrir a lista
     cy.get('[class="cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing"]')///encontra o popup com as moedas
