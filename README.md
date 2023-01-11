@@ -1,5 +1,7 @@
 Esta spec se trata de uma automação para teste ao inicar a tela home do Site majorsports e cadastro na plataforma. Simulando um cadastro brasileiro usando a moeda nacional.
 
+A spec encontra-se na pasta cypress/e2e/mstelainicial.cy.js
+
 O cypress pode apresentar erros, sendo eles:
 Não carregar as informações na tela antes da execução da função, fazendo com que não seja encontrado o input, o botão antes do tempo de execução do .get ou .click. ou .check.
 
